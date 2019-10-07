@@ -1,7 +1,5 @@
 # Simple TypeScript Type Definitions
 
-[![Build Status](https://travis-ci.org/flandrade/simple-types.svg?branch=master)](https://travis-ci.org/flandrade/simple-types)
-
 TypeScript type definition with tests ([tsd](https://www.npmjs.com/package/tsd)).
 
 ## Getting started

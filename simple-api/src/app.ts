@@ -6,11 +6,11 @@ import * as userController from "./controllers/users";
 const app = express();
 
 // Express configuration
-app.set("port", process.env.PORT || 3000);
+app.set("port", process.env.PORT || 3001);
 
 /**
  * API
  */
-app.get("/users", userController.getUsers);
+app.get("/users", userController.getUserReq);
 
 export default app;

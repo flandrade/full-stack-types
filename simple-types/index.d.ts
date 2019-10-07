@@ -2,8 +2,6 @@
 // Definitions by: Stack Builders <https://github.com/stackbuilders>
 // TypeScript Version: 3.6
 
-declare let myApi: myApi.Static;
-
 declare namespace myApi {
     type Status = "available" | "non-available";
 
@@ -14,17 +12,15 @@ declare namespace myApi {
         status: Status;
     }
 
-    interface Static {
-      /**
-       * Get users
-       */
-      getUsers(): User[];
+    /**
+     * Get users
+     */
+    type getUsers = () => User[];
 
-      /**
-       * Get a user
-       */
-      getUser(id: number): User;
-    }
+    /**
+     * Get a user
+     */
+    type getUser = (id: number) => User;
 }
 
 export = myApi;
