@@ -1,0 +1,13 @@
+# Thumbnails
+._*
+
+# Common
+.idea
+*.map
+.DS_Store
+
+# Vim
+.projections.json
+
+# VsCode
+.vscode
