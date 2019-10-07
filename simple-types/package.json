@@ -1,0 +1,19 @@
+{
+  "name": "simple-types",
+  "version": "1.0.0",
+  "description": "Simple TypeScript type definitions",
+  "scripts": {
+    "test": "tsd"
+  },
+  "author": "Fernanda Andrade <flandradeg@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.3.2",
+    "@typescript-eslint/parser": "^2.3.2",
+    "eslint": "^6.5.1",
+    "install": "^0.13.0",
+    "npm": "^6.11.3",
+    "tsd": "^0.9.0",
+    "typescript": "^3.6.3"
+  }
+}

@@ -1,0 +1,25 @@
+# Thumbnails
+._*
+
+# Common
+.idea
+*.map
+.DS_Store
+
+# Vim
+.projections.json
+
+# VsCode
+.vscode
+
+# Logs
+logs
+*.log
+
+# Dependencies
+node_modules
+npm-debug.log
+
+# TypeScript and JS files
+.tscache
+dist
