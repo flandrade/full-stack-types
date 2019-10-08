@@ -4,7 +4,8 @@
   "description": "Full Stack Types",
   "scripts": {
     "build": "tsc -b -v",
-    "clean": "tsc -b --clean"
+    "clean": "tsc -b --clean",
+    "install:all": "cd server && npm install && cd .. && cd client && npm install && cd .. && cd shared-types && npm install"
   },
   "devDependencies": {
     "typescript": "^3.6.3"

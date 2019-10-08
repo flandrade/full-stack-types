@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+    - node_modules
+    - client/node_modules
+    - server/node_modules
+    - shared-types/node_modules
+before_script:
+  - cd shared-types && npm install
+  - cd .. && cd server && npm install
+  - cd .. && cd client && npm install & cd ..
+script:
+  - npm run build
