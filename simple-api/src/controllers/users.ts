@@ -32,8 +32,8 @@ const users: myApi.User[] =
 
 const getUsers: myApi.getUsers = function() {
   return users;
-}
+};
 
 const getUser: myApi.getUser = function(id: number) {
   return users[1];
-}
+};

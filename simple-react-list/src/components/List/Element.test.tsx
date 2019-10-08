@@ -11,17 +11,15 @@ it('renders with no element', () => {
     <table><Element users={users} /></table>, div
   );
 
-  expect(div.textContent).not.toContain('Seattle');
-  expect(div.textContent).not.toContain('Miami');
+  expect(div.textContent).not.toContain('Peter');
+  expect(div.textContent).not.toContain('Tess');
   ReactDOM.unmountComponentAtNode(div)
 });
 ;
 
 it('renders with one element', () => {
   const users: User[] = [{
-    address: {
-      city: "Seattle"
-    },
+    age: 5,
     id: 1,
     name: "Peter",
     status: "non-available"
@@ -32,23 +30,19 @@ it('renders with one element', () => {
     <table><Element users={users} /></table>, div
   );
 
-  expect(div.textContent).toContain('Seattle');
-  expect(div.textContent).not.toContain('Miami');
+  expect(div.textContent).toContain('Peter');
+  expect(div.textContent).not.toContain('Tess');
   ReactDOM.unmountComponentAtNode(div)
 });
 
 it('renders with two elements', () => {
   const users: User[] = [{
-    address: {
-      city: "Seattle"
-    },
+    age: 5,
     id: 1,
     name: "Peter",
     status: "non-available"
   }, {
-    address: {
-      city: "Miami"
-    },
+    age: 15,
     id: 2,
     name: "Tess",
     status: "available"
@@ -59,7 +53,7 @@ it('renders with two elements', () => {
     <table><Element users={users} /></table>, div
   );
 
-  expect(div.textContent).toContain('Seattle');
-  expect(div.textContent).toContain('Miami');
+  expect(div.textContent).toContain('Peter');
+  expect(div.textContent).toContain('Tess');
   ReactDOM.unmountComponentAtNode(div)
 });
