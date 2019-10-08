@@ -2,6 +2,9 @@
 // Definitions by: Stack Builders <https://github.com/stackbuilders>
 // TypeScript Version: 3.6
 
+export = myApi;
+export as namespace myApi
+
 declare namespace myApi {
     type Status = "available" | "non-available";
 
@@ -15,13 +18,14 @@ declare namespace myApi {
     /**
      * Get users
      */
-    type getUsers = () => User[];
+    interface GetUsers {
+        (): Promise<User[]>;
+    }
 
     /**
      * Get a user
      */
-    type getUser = (id: number) => User;
+    interface GetUser {
+      (id: number): Promise<User>;
+  }
 }
-
-export = myApi;
-export as namespace myApi;

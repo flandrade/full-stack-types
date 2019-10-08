@@ -11,3 +11,6 @@
 
 # VsCode
 .vscode
+
+node_modules
+dist

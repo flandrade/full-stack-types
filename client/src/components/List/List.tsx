@@ -5,13 +5,15 @@ import Element from './Element'
 import './List.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { User, getUsers } from '../../services/api';
+import { User, GetUsers } from "../../types/api"
+import { getUsers } from "../../services/api"
+
 
 interface State {
   users: User[];
 }
 
-class List extends React.Component<{ getUsers: getUsers }, State> {
+class List extends React.Component<{ getUsers: GetUsers }, State> {
   state = {
     users: []
   }

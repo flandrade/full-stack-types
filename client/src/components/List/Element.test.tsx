@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Element from './Element';
-import { User } from '../../services/api';
+import { User } from "../../types/api";
 
 it('renders with no element', () => {
   const users: User[] = [];

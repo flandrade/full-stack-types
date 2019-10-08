@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./shared-types",
+    "lib": ["es6"],
+    "outDir": "dist",
+    "types": [],
+    "typeRoots": [
+      "."
+    ]
+  },
+  "files": [
+    "index.d.ts"
+  ]
+}

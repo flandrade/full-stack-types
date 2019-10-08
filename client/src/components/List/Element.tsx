@@ -1,7 +1,7 @@
 import React from 'react';
 import Badge from 'react-bootstrap/Badge';
 
-import { User, Status } from "../../services/api";
+import { User, Status } from "../../types/api"
 
 interface Props {
   users: User[];
